@@ -1,0 +1,19 @@
+<mat-sidenav-container>
+    <mat-sidenav mode="side" [opened]='showFiller'>
+        <div class="sidemenu-holder">
+            <app-sidemenu></app-sidemenu>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="component-holder">
+            <button class="nav-button w3-black shadow" (click)='showFiller = !showFiller'>
+                <i *ngIf='showFiller' class="fa fa-angle-left"></i>
+                <i *ngIf='!showFiller' class="fa fa-angle-right"></i>
+            </button>
+            <router-outlet></router-outlet>
+            <div class="components-footer w3-large">
+                <span class="w3-text-blue-gray">Copyright &copy; Stefan Milovanović 2018-present</span>
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

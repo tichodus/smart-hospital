@@ -1,0 +1,36 @@
+<div class="w3-container">
+  <div class="w3-container" style="margin: auto; width: 100%;">
+    <mat-tab-group>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <h5><i class="fa fa-hospital"></i> Rooms</h5>
+        </ng-template>
+        <hr>
+        <app-card-rooms [rooms]='this.rooms'></app-card-rooms>
+        <hr>
+        <app-card-room [room]='room'></app-card-room>
+        <hr>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <h5><i class="fa fa-user-alt"></i> Patients</h5>
+        </ng-template>
+        <hr>
+        <app-card-patients [patients]='this.patients'></app-card-patients>
+        <hr>
+        <app-card-patient [patient]='this.patient'></app-card-patient>
+        <hr>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <h5><i class="fa fa-medkit"></i> Conditions</h5>
+        </ng-template>
+        <hr>
+        <app-card-conditions [conditions]='this.conditions'></app-card-conditions>
+        <hr>
+        <app-card-condition [condition]='this.condition'></app-card-condition>
+        <hr>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.container {
+    height: 100%;
+    width: 150px;
+    background: black;
+}
+
+.separator {
+    height: 2px;
+    background: white;
+}
+
+a {
+    font-size: 11px;
+    text-decoration: none;
+}

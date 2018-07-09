@@ -1,0 +1,27 @@
+.separator {
+    height: 10px;
+}
+
+.container {
+    height: 200px;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.margin-bot {
+   margin-bottom: 32px;
+}
+
+.item {
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    cursor: pointer;
+}
+
+.item:hover {
+    background: rgb(190, 190, 190);
+}
+
+.border-bot {
+    border-bottom-style: double;
+}

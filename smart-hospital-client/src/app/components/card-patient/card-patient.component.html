@@ -1,0 +1,24 @@
+<div class="w3-container margin-top">
+    <div class="w3-card-4 w3-margin">
+      <header class="w3-container w3-grey w3-center">
+        <h3 class="w3-margin w3-text-white"><i class="fa fa-search-plus"></i> Selected patient data</h3>
+      </header>
+      <div *ngIf='patient != null' class="w3-container w3-center w3-margin-top">
+        <div class="w3-row">
+          <div class="w3-quarter border-bot">First name</div>
+          <div class="w3-quarter border-bot">Last name</div>
+          <div class="w3-quarter border-bot">Temperature</div>
+          <div class="w3-quarter border-bot">Blood preasure</div>
+        </div>
+        <div class="w3-row w3-margin">
+          <div class="w3-quarter"><b>{{ patient._firstName }}</b></div>
+          <div class="w3-quarter"><b>{{ patient._lastName }}</b></div>
+          <div class="w3-quarter"><b>{{ patient._temperature }}</b></div>
+          <div class="w3-quarter"><b>{{ patient._bloodPreasure }}</b></div>
+        </div>
+      </div>
+      <div *ngIf='patient == null' class="w3-container w3-center w3-margin-top">
+        <p class="w3-text-red">You haven't selected a patient</p>
+      </div>   
+    </div>
+  </div>

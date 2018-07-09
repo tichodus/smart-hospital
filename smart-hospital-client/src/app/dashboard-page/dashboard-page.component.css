@@ -1,0 +1,12 @@
+.background {
+    background-image: url("src/assets/bg.png");
+    background-repeat: repeat-x;
+    background-size: 50vh 50vh;
+}
+
+.center-vertical {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: white;
+}

@@ -1,0 +1,23 @@
+  <div class="w3-container margin-top">
+    <div class="w3-card-4 w3-margin">
+      <header class="w3-container w3-grey w3-center">
+        <h3 class="w3-margin w3-text-white"><i class="fa fa-search-plus"></i> Selected condition data</h3>
+      </header>
+      <div *ngIf='condition != null' class="w3-container w3-center w3-margin-top">
+        <div class="w3-row">
+          <div class="w3-third border-bot">Type</div>
+          <div class="w3-third border-bot">Description</div>
+          <div class="w3-third border-bot">Urgence level</div>
+        </div>
+        <div class="w3-row w3-margin">
+          <div class="w3-third"><b>{{ condition.type }}</b></div>
+          <div class="w3-third"><b>{{ condition.description }}</b></div>
+          <div *ngIf='condition.isUrgent == 0' class="w3-third"><b>Not urgent</b></div>
+          <div *ngIf='condition.isUrgent == 1' class="w3-third"><b>Urgent</b></div>
+        </div>
+      </div>
+      <div *ngIf='condition == null' class="w3-container w3-center w3-margin-top">
+        <p class="w3-text-red">You haven't selected a condition</p>
+      </div>   
+    </div>
+  </div>
